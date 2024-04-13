@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body {
+	font-family: sans-serif;
+}
+/* STEP 1: Style the dude */
+#dude {
+	width: 58px;
+	height: 75px;
+	background: url('../Images/AjFP5.png')left  top ;
+}
+
+.up{
+	animation: up steps(3) 0.5s infinite;
+}
+
+.down{
+	animation: down steps(3) 0.5s infinite;
+}	
+
+.right{
+	background: url('../Images/AjFP5.png')left  -72px top ;
+	animation: right steps(3) 0.5s infinite;
+}
+
+.left{
+	animation: left steps(3) 0.5s infinite;
+}
+
+/* STEP 3a: Add a class that binds the animation to the element (you'll need to manually add the class in the HTML) */
+.go {
+	animation: go steps(3) 0.5s infinite;
+}
+/* STEP 3b: To get the frame-by-frame animation effect, we add the steps() timing function */
+
+/* STEP 2: Create a keyframe rule that animates the background position of the sprite sheet */
+@keyframes down {
+	100%{
+	background-position-x:-180px;
+	}
+}
+/* STEP 4: Complete the animations for right, left and up (then proceed to the HTML file) */
+@keyframes right {
+	0%{
+	background-position-y:-72px;
+	background-position-x:0px;
+	}
+	100%{
+	background-position-y:-72px;
+	background-position-x:-180px;
+	}
+}
+@keyframes left {
+	0%{
+		background-position-y:-155px;
+		background-position-x:0px;
+		}
+	100%{
+		background-position-y:-155px;
+		background-position-x:-180px;
+		}
+}
+@keyframes up {
+	0%{
+		background-position-y:-238px;
+		background-position-x:0px;
+		}
+	100%{
+		background-position-y:-238px;
+		background-position-x:-180px;
+		}
+}
+@keyframes go {
+	0%{
+		background-position-y:0px;
+		background-position-x:0px;
+		}
+	100%{
+		background-position-y:-238px;
+		background-position-x:0px;
+		}
+}
