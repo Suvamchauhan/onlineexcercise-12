@@ -1,6 +1,6 @@
 .stylecharacter {
-    width: 120px;
-    height: 130px;
+    width: 100px;
+    height: 120px;
     overflow: hidden;
     position: relative;
 }
@@ -33,7 +33,7 @@
         transform: translateY(0);
     }
     to {
-        transform: translateY(-30px);
+        transform: translateY(-16px);
     }
 }
 
@@ -42,7 +42,7 @@
         transform: translateY(0);
     }
     to {
-        transform: translateY(30px);
+        transform: translateY(15px);
     }
 }
 
@@ -51,7 +51,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(22.5px);
+        transform: translateX(26px);
     }
 }
 
@@ -60,7 +60,7 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(-22.5px);
+        transform: translateX(-15px);
     }
 }
 
